@@ -13,7 +13,7 @@ class ContactList extends Component {
         const list = this.state.contacts.map((item, index)=> {
 
             return(
-                <ContactCard key={index} firstName={item.firstName} lastName={item.lastName}/>
+                <ContactCard key={index} contact={item}/>
             )
         });
 
